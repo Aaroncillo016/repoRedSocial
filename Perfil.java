@@ -1,7 +1,10 @@
+ public void eliminarAmigo(String amigo) {
+                listaAmigos.remove(amigo);
+        System.out.println("Amigo eliminado: " + amigo);
+    }
 package RedSocial;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.ArrayListimport java.util.List;
 
 
 public class Perfil {
@@ -31,8 +34,12 @@ public class Perfil {
     
     // Método para eliminar un amigo 
     public void eliminarAmigo(String amigo) {
-    		listaAmigos.remove(amigo);  
-        System.out.println("Amigo eliminado: " + amigo);
+	if (listaAmigos.contains(amigo)) {
+	    listaAmigos.remove(amigo);
+	    System.out.println("Amigo Eliminado: " + amigo);
+	} else {
+	    System.out.println("No se encontro al amigo: " + amigo);
+	}
     }
     
     // Método para enviar un mensaje a un amigo
