@@ -52,3 +52,9 @@ public class Perfil {
         System.out.println("Amigos (" + listaAmigos.size() + "): " + listaAmigos);
     }
 }
+
+// Método para reaccionar a una publicación
+public void reaccionarPublicacion(String publicacion, String reaccion) { System.out.println(nombre + " ha reaccionado a '" + publicacion + "' con \"" + reaccion +
+\"");
+}
+
